@@ -1,5 +1,8 @@
 import { SplashScreen } from '@capacitor/splash-screen';
 import { Camera } from '@capacitor/camera';
+import { echo } from "capacitor-plugin-backswipe";
+
+echo("");
 
 window.customElements.define(
   'capacitor-welcome',

@@ -15,4 +15,10 @@ public class BackswipePlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    override public func load() {
+        bridge?.webView?.allowsBackForwardNavigationGestures = true;
+        bridge?.webView?.scrollView.showsHorizontalScrollIndicator = false;
+        bridge?.webView?.scrollView.showsVerticalScrollIndicator = false;
+    }
 }
